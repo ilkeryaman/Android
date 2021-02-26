@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PLTextViewAttr">
+        <attr name="fonts" format="string" >
+            <enum name="RalewayMedium" value="1" />
+            <enum name="RalewaySemiBold" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="PLButtonAttr">
+        <attr name="decreaseTextSize" format="boolean" />
+    </declare-styleable>
+</resources>

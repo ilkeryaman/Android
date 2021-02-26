@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hayvan Kartları</string>
+
+    <string name="bat">Yarasa</string>
+    <string name="chicken">Tavuk</string>
+    <string name="cow">İnek</string>
+    <string name="crocodile">Timsah</string>
+    <string name="deer">Geyik</string>
+    <string name="elephant">Fil</string>
+    <string name="fox">Tilki</string>
+    <string name="frog">Kurbağa</string>
+    <string name="giraffe">Zürafa</string>
+    <string name="goat">Keçi</string>
+    <string name="hippopotam">Su Aygırı</string>
+    <string name="horse">At</string>
+    <string name="kangaroo">Kanguru</string>
+    <string name="lion">Aslan</string>
+    <string name="monkey">Maymun</string>
+    <string name="owl">Baykuş</string>
+    <string name="pig">Domuz</string>
+    <string name="rabbit">Tavşan</string>
+    <string name="raccoon">Rakun</string>
+    <string name="rhino">Gergedan</string>
+    <string name="taurus">Boğa</string>
+    <string name="tiger">Kaplan</string>
+    <string name="turkey">Hindi</string>
+    <string name="zebra">Zebra</string>
+
+    <string name="remove_ads">R\nE\nK\nL\nA\nM\nI\n \nK\nA\nL\nD\nI\nR</string>
+    <string name="baby">BEBEK</string>
+    <string name="child">ÇOCUK</string>
+    <string name="brother">AGABEY</string>
+    <string name="father">BABA</string>
+    <string name="grandfather">DEDE</string>
+
+    <string name="attempt">Deneme:</string>
+    <string name="turned">Açılan Kart:</string>
+    <string name="duration">Süre:</string>
+    <string name="level">Seviye:</string>
+    <string name="points">puan</string>
+    <string name="play_again">TEKRAR OYNA</string>
+    <string name="main_menu">ANA MENÜ</string>
+</resources>

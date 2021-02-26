@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="button_background">#DEB887</color>
+    <color name="button_border">#8A2BE2</color>
+    <color name="caption_color">#6F1169</color>
+    <color name="infotext_color">#DAAE19</color>
+</resources>

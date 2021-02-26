@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">☈ Parola Saklayıcı</string>
+    <string name="pointer">☈</string>
+    <string name="database_question">Yeni veritabanı mı oluşturulsun yoksa bilgiler dosyadan içeri mi aktarılsın?</string>
+    <string name="create_new_database">Yeni Veritabanı Oluştur</string>
+    <string name="restore_from_backup">Dosyadan İçeri Aktar</string>
+
+    <string name="info">Bilgi:</string>
+    <string name="warning">Uyarı:</string>
+    <string name="error">Hata:</string>
+    <string name="exit_message">Uygulamadan çıkmak istediğinize emin misiniz?</string>
+    <string name="button_ok">Tamam</string>
+    <string name="button_cancel">İptal</string>
+    <string name="button_no">Hayır</string>
+    <string name="button_yes">Evet</string>
+
+    <string name="provide_master_password">Lütfen login olmak için kullanacağınız ana parolanızı oluşturunuz:</string>
+    <string name="chose_master_password_carefully">Ana parolanızı dikkatlice seçiniz. Parolanız hatırlaması kolay ama başkaları tarafından tahmin edilemez olmalıdır.</string>
+    <string name="impossible_recover">Parolanızı unutursanız, şifre veritabanına erişemezsiniz. Geri dönüşü yoktur, maalesef size yardımcı olamayız.</string>
+    <string name="enter_master_password">Ana parolanızı giriniz ...</string>
+    <string name="enter_master_password_again">Ana parolanızı giriniz (tekrar) ...</string>
+    <string name="create">Oluştur</string>
+    <string name="master_password_length">Ana parola 6 ila 12 karakterden oluşmalıdır.</string>
+    <string name="master_password_match">Ana parolalarınız uyuşmuyor.</string>
+    <string name="no_record_found">Henüz Hesap Bulunmuyor</string>
+
+    <string name="open">Aç</string>
+    <string name="invalid_password">Hatalı parola</string>
+
+    <string name="enter_your_master_password">Ana parolanızı giriniz</string>
+    <string name="uninstall_warning">NOT: Parola Saklayıcı uygulamasını telefonunuzdan kaldırırsanız, şifre veritabanınız da silinecektir. Bu nedenle, düzenli olarak yedek almanız oldukça önemlidir (Menüden yedekleme yapabilirsiniz).</string>
+
+    <string name="account_name">Hesap Adı:</string>
+    <string name="user_id">Kullanıcı Adı:</string>
+    <string name="password">Şifre:</string>
+    <string name="url">Url:</string>
+    <string name="notes">Notlar:</string>
+    <string name="save">Kaydet</string>
+
+    <string name="add">Ekle</string>
+    <string name="more">Daha Fazla ...</string>
+    <string name="change_master_password">Ana Parolayı Değiştir</string>
+    <string name="restore_database">İçeri Aktar</string>
+    <string name="backup_database">Yedekle</string>
+    <string name="delete_database">Veritabanını Sil</string>
+    <string name="edit">Düzenle</string>
+    <string name="delete">Sil</string>
+
+    <string name="account_name_required">Hesap Adı zorunludur</string>
+    <string name="account_exists">Bu Hesap Adı daha önce kaydedilmiş</string>
+    <string name="delete_password_warning_title">Silmeyi Onayla</string>
+    <string name="delete_password_warning_message">Emin misiniz?</string>
+    <string name="delete_database_warning_title">Silmeyi Onayla</string>
+    <string name="delete_database_warning_message">Veritabanını silmek istediğinize emin misiniz? Bir kere silinirse, geri getirmenin imkanı yoktur.</string>
+    <string name="permission_message_error">Yetki verilmediği için işleme devam edilemiyor.</string>
+
+    <string name="existing_master_password">Mevcut Ana Parola:</string>
+    <string name="new_master_password">Yeni Ana Parola:</string>
+    <string name="new_master_password_again">Yeni Ana Parola (tekrar):</string>
+    <string name="master_password_change_success">Ana Parola değiştirildi.</string>
+
+    <string name="backup_database_warning">Yedeklenmiş xml dosyası (r4passlock.xml) telefonunuzun kök (root) dizininde mevcut. Hesap bilgilerinizi üzerine yazmak istiyor musunuz?</string>
+    <string name="backup_database_successful">Veritabanı, telefonunuzun kök (root) dizinindeki r4passlock.xml dosyasına yedeklendi.</string>
+    <string name="enter_master_password_for_restore">Yedek veritabanı ana parolasını girin</string>
+    <string name="restore_database_not_found">Yedeklenmiş xml dosyası (r4passlock.xml), telefonunuzun kök (root) dizininde bulunamadı.</string>
+    <string name="restore_database_warning">İçeri aktarma işlemi sonrasında, şifre listesi yedek dosyadakilerle güncellenecektir.</string>
+
+    <string name="edit_account">Hesabı Düzenle</string>
+    <string name="copy_userid">Kullanıcı Adını Kopyala</string>
+    <string name="copy_password">Şifreyi Kopyala</string>
+    <string name="launch_url">Siteye Git</string>
+
+    <string name="banner">ca-app-pub-2395384153614571/6695053844</string>
+    <string name="interstitial">ca-app-pub-2395384153614571/8568739841</string>
+    <string name="buy_pro">Reklamsız Versiyon ...</string>
+    <string name="passlock_pro">https://play.google.com/store/apps/details?id=com.reset4.passlockpro</string>
+</resources>

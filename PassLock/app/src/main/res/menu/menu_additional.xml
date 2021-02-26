@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.reset4.passlock.PasswordListActivity">
+    <item android:id="@+id/changeMasterPassword" android:title="@string/change_master_password"
+        android:orderInCategory="100" app:showAsAction="always" />
+    <item android:id="@+id/restoreDatabase" android:title="@string/restore_database"
+        android:orderInCategory="200" app:showAsAction="always" />
+    <item android:id="@+id/backupDatabase" android:title="@string/backup_database"
+        android:orderInCategory="300" app:showAsAction="always" />
+    <item android:id="@+id/deleteDatabase" android:title="@string/delete_database"
+        android:orderInCategory="400" app:showAsAction="always" />
+</menu>

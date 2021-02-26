@@ -1,0 +1,13 @@
+<Metadata>
+    <Tables>
+        <Table Name="PasswordInfo" EntityName="PasswordInfoEntity" BusinessObjectName="PasswordInfoBO" SaveSetting="SaveToDatabase" >
+            <Columns>
+                <Column Name="AccountName" Type="String" />
+                <Column Name="UserId" Type="String" />
+                <Column Name="Passwrd" Type="String" />
+                <Column Name="Url" Type="String" />
+                <Column Name="Notes" Type="String" />
+            </Columns>
+        </Table>
+    </Tables>
+</Metadata>

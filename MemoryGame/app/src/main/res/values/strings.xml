@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Animal Card</string>
+
+    <string name="bat">Bat</string>
+    <string name="chicken">Chicken</string>
+    <string name="cow">Cow</string>
+    <string name="crocodile">Crocodile</string>
+    <string name="deer">Deer</string>
+    <string name="elephant">Elephant</string>
+    <string name="fox">Fox</string>
+    <string name="frog">Frog</string>
+    <string name="giraffe">Giraffe</string>
+    <string name="goat">Goat</string>
+    <string name="hippopotam">Hippopotam</string>
+    <string name="horse">Horse</string>
+    <string name="kangaroo">Kangaroo</string>
+    <string name="lion">Lion</string>
+    <string name="monkey">Monkey</string>
+    <string name="owl">Owl</string>
+    <string name="pig">Pig</string>
+    <string name="rabbit">Rabbit</string>
+    <string name="raccoon">Raccoon</string>
+    <string name="rhino">Rhino</string>
+    <string name="taurus">Taurus</string>
+    <string name="tiger">Tiger</string>
+    <string name="turkey">Turkey</string>
+    <string name="zebra">Zebra</string>
+
+    <string name="remove_ads">R\nE\nM\nO\nV\nE\n \nA\nD\nS</string>
+    <string name="baby">BABY</string>
+    <string name="child">CHILD</string>
+    <string name="brother">BROTHER</string>
+    <string name="father">FATHER</string>
+    <string name="grandfather">GRANDFATHER</string>
+
+    <string name="attempt">Attempt:</string>
+    <string name="turned">Turned Card:</string>
+    <string name="duration">Duration:</string>
+    <string name="level">Level:</string>
+    <string name="points">pts</string>
+    <string name="play_again">PLAY AGAIN</string>
+    <string name="main_menu">MAIN MENU</string>
+</resources>

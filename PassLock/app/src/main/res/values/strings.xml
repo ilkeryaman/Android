@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">☈ Pass Lock</string>
+    <string name="pointer">☈</string>
+    <string name="database_question">Would you like to create a new database or open an existing one from a backup?</string>
+    <string name="create_new_database">Create New Database</string>
+    <string name="restore_from_backup">Restore From Backup</string>
+
+    <string name="info">Info:</string>
+    <string name="warning">Warning:</string>
+    <string name="error">Error:</string>
+    <string name="exit_message">Application will be closed. Are you sure you want to exit?</string>
+    <string name="button_ok">OK</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_no">No</string>
+    <string name="button_yes">Yes</string>
+
+    <string name="provide_master_password">Please provide a master password to login:</string>
+    <string name="chose_master_password_carefully">Choose your master password carefully. It should be difficult for others to guess but easy for you to remember.</string>
+    <string name="impossible_recover">If you forget your master password, there is no way for opening database. There are no backdoors, unfortunately we cant help.</string>
+    <string name="enter_master_password">Enter master password ...</string>
+    <string name="enter_master_password_again">Enter master password (again) ...</string>
+    <string name="create">Create</string>
+    <string name="master_password_length">Master password should be 6 to 12 characters.</string>
+    <string name="master_password_match">Your master passwords do not match.</string>
+    <string name="no_record_found">No Accounts</string>
+
+    <string name="open">Open</string>
+    <string name="invalid_password">Invalid password</string>
+
+    <string name="enter_your_master_password">Please enter your master password</string>
+    <string name="uninstall_warning">NOTE: If you uninstall Pass Lock, your password database will be deleted along with it. For this reason, it is important you backup your data regularly (available in the menu).</string>
+
+    <string name="account_name">Account Name:</string>
+    <string name="user_id">User Id:</string>
+    <string name="password">Password:</string>
+    <string name="url">Url:</string>
+    <string name="notes">Notes:</string>
+    <string name="save">Save</string>
+
+    <string name="add">Add</string>
+    <string name="more">More ...</string>
+    <string name="change_master_password">Change Master Password</string>
+    <string name="restore_database">Restore</string>
+    <string name="backup_database">Backup</string>
+    <string name="delete_database">Delete Database</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+
+    <string name="account_name_required">Account Name is required</string>
+    <string name="account_exists">Account with this name already exists</string>
+    <string name="delete_password_warning_title">Confirm Delete</string>
+    <string name="delete_password_warning_message">Are you sure?</string>
+    <string name="delete_database_warning_title">Confirm Delete</string>
+    <string name="delete_database_warning_message">Are you sure you want to delete your database? Once deleted the database is gone forever.</string>
+    <string name="permission_message_error">Can not operate. Access denied.</string>
+
+    <string name="existing_master_password">Existing Master Password:</string>
+    <string name="new_master_password">New Master Password:</string>
+    <string name="new_master_password_again">New Master Password (again):</string>
+    <string name="master_password_change_success">Master Password is changed successfully.</string>
+
+    <string name="backup_database_warning">Backup xml file (r4passlock.xml) already exists in root directory of your phone. Do you want to overwrite?</string>
+    <string name="backup_database_successful">Backup database successfully to r4passlock.xml in root directory of your phone.</string>
+    <string name="enter_master_password_for_restore">Enter master password of backup database</string>
+    <string name="restore_database_not_found">Backup xml file (r4passlock.xml), not found in root directory of your phone.</string>
+    <string name="restore_database_warning">After database restore, current password information list will be replaced from backup file.</string>
+
+    <string name="edit_account">Edit Account</string>
+    <string name="copy_userid">Copy User Id</string>
+    <string name="copy_password">Copy Password</string>
+    <string name="launch_url">Launch Url</string>
+
+    <string name="banner_app_id" translatable="false">ca-app-pub-2395384153614571~5615273444</string>
+    <string name="banner">ca-app-pub-2395384153614571/6695053844</string>
+    <string name="interstitial">ca-app-pub-2395384153614571/8568739841</string>
+    <string name="buy_pro">Ad-free Version ...</string>
+    <string name="passlock_pro">https://play.google.com/store/apps/details?id=com.reset4.passlockpro</string>
+</resources>

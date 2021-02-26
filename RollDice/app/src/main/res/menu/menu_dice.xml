@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="com.reset4.rolldice.DiceActivity">
+    <item android:id="@+id/soundOnOff"
+        android:title="@string/soundOnOff" android:checkable="true"/>
+    <item android:id="@+id/backgroundColor" android:title="@string/backgroundColorMenu" android:onClick="showBackgroundColorOptions"></item>
+    <item android:id="@+id/diceColor" android:title="@string/diceColorMenu" android:onClick="showDiceColorOptions"></item>
+    <item android:id="@+id/buyPro" android:title="@string/buyProMenu" android:onClick="openGooglePlay"></item>
+</menu>
