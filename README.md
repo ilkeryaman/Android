@@ -1,2 +1,2 @@
-# android
-Native Android Projects
+# Android Projects
+This bundle contains some native Android projects. Enjoy!
