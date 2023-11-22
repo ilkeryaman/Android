@@ -1,9 +1,5 @@
 package com.reset4.passlock;
 
-import android.app.Activity;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
@@ -11,7 +7,7 @@ import com.reset4.passlock.backup.BackupManager;
 import com.reset4.passlock.backup.OperationType;
 import com.reset4.passlock.manifest.PassLockApp;
 import com.reset4.passlock.manifest.Permission;
-import com.reset4.passlock.ui.PLDialog;
+import com.reset4.passlockpro.R;
 
 import java.util.HashMap;
 

@@ -5,14 +5,15 @@ import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.util.AttributeSet;
 import android.util.TypedValue;
-import android.widget.Button;
 
-import com.reset4.passlock.R;
+import androidx.appcompat.widget.AppCompatButton;
+
+import com.reset4.passlockpro.R;
 
 /**
  * Created by ilkery on 31.12.2016.
  */
-public class PLButton extends Button {
+public class PLButton extends AppCompatButton {
     AttributeSet attrs;
 
     public PLButton(Context context) {

@@ -2,7 +2,6 @@ package com.reset4.passlock;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.v7.widget.PopupMenu;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -10,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.PopupMenu;
 import android.widget.TextView;
 
 import com.reset4.fourwork.datalayer.BOCollection;
@@ -27,6 +27,7 @@ import com.reset4.passlock.security.MasterPassword;
 import com.reset4.passlock.ui.PLDialog;
 import com.reset4.passlock.ui.PLTextView;
 import com.reset4.passlock.ui.UIHelper;
+import com.reset4.passlockpro.R;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -71,18 +72,17 @@ public class PasswordListActivity extends PassLockActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.addPassword:
-                redirectToAddPassword();
-                return true;
-            case R.id.buyPro:
-                openPassLockProWebPage();
-                return true;
-            case R.id.more:
-                openMoreMenu();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
+        if(item.getItemId() == R.id.addPassword){
+            redirectToAddPassword();
+            return true;
+        } else if(item.getItemId() == R.id.buyPro){
+            openPassLockProWebPage();
+            return true;
+        } else if(item.getItemId() == R.id.more){
+            openMoreMenu();
+            return true;
+        } else {
+            return super.onOptionsItemSelected(item);
         }
     }
 
@@ -178,21 +178,20 @@ public class PasswordListActivity extends PassLockActivity {
 
             @Override
             public boolean onMenuItemClick(MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.changeMasterPassword:
-                        redirectToChangeMasterPassword();
-                        return true;
-                    case R.id.restoreDatabase:
-                        restoreDatabase();
-                        return true;
-                    case R.id.backupDatabase:
-                        backupDatabase();
-                        return true;
-                    case R.id.deleteDatabase:
-                        deleteDatabase();
-                        return true;
-                    default:
-                        return true;
+                if(item.getItemId() == R.id.changeMasterPassword){
+                    redirectToChangeMasterPassword();
+                    return true;
+                } else if(item.getItemId() == R.id.restoreDatabase){
+                    restoreDatabase();
+                    return true;
+                } else if(item.getItemId() == R.id.backupDatabase){
+                    backupDatabase();
+                    return true;
+                } else if(item.getItemId() == R.id.deleteDatabase){
+                    deleteDatabase();
+                    return true;
+                } else {
+                    return true;
                 }
             }
         });

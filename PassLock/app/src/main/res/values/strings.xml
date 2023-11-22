@@ -52,6 +52,7 @@
     <string name="delete_password_warning_message">Are you sure?</string>
     <string name="delete_database_warning_title">Confirm Delete</string>
     <string name="delete_database_warning_message">Are you sure you want to delete your database? Once deleted the database is gone forever.</string>
+    <string name="permission_message_info">Passlock needs managing external storage permission to backup or restore data. Please allow access to manage files.</string>
     <string name="permission_message_error">Can not operate. Access denied.</string>
 
     <string name="existing_master_password">Existing Master Password:</string>

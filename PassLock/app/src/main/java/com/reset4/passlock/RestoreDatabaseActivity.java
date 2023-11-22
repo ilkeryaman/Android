@@ -13,11 +13,10 @@ import com.reset4.passlock.backup.BackupManager;
 import com.reset4.passlock.backup.XmlFileOperator;
 import com.reset4.passlock.businessobjects.PasswordInfoBO;
 import com.reset4.passlock.manifest.PassLockApp;
-import com.reset4.passlock.security.MasterPassword;
 import com.reset4.passlock.ui.PLDialog;
 import com.reset4.passlock.ui.PLEditText;
+import com.reset4.passlockpro.R;
 
-import java.io.File;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

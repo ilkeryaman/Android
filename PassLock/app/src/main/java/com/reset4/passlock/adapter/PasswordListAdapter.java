@@ -1,11 +1,9 @@
 package com.reset4.passlock.adapter;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.widget.PopupMenu;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -14,20 +12,16 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.widget.PopupMenu;
 
 import com.reset4.passlock.PassLockActivity;
 import com.reset4.passlock.PasswordActivity;
-import com.reset4.passlock.PasswordListActivity;
-import com.reset4.passlock.R;
 import com.reset4.passlock.businessobjects.PasswordInfoBO;
 import com.reset4.passlock.manifest.PassLockApp;
 import com.reset4.passlock.security.Encryption;
 import com.reset4.passlock.ui.PLTextView;
 import com.reset4.passlock.ui.UIHelper;
-
-import org.w3c.dom.Text;
+import com.reset4.passlockpro.R;
 
 import java.util.HashMap;
 import java.util.List;
@@ -113,32 +107,31 @@ public class PasswordListAdapter extends BaseAdapter {
 
             @Override
             public boolean onMenuItemClick(MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.editAccount:
-                        HashMap<String, String> parameters = new HashMap<>();
-                        parameters.put("PasswordInfoBOId", passwordInfoBO.getEntity().getPrimaryKeyField().getValue().toString());
-                        parameters.put("EditMode", "1");
-                        PassLockApp app = (PassLockApp) context.getApplication();
-                        app.redirect(context, PasswordActivity.class, parameters);
-                        return true;
-                    case R.id.copyUserId:
-                        copyText(passwordInfoBO.getEntity().getUserId());
-                        return true;
-                    case R.id.copyPassword:
-                        copyText(Encryption.decrypt(context.getMasterPassword(), passwordInfoBO.getEntity().getPassword()).getValue());
-                        return true;
-                    case R.id.launchUrl:
-                        String url = passwordInfoBO.getEntity().getUrl();
-                        if(url == null || url.trim() == ""){
-                            url = "http://www.google.com";
-                        }else if(!url.startsWith("http")){
-                            url = "http://" + url;
-                        }
-                        final Intent intent = new Intent(Intent.ACTION_VIEW).setData(Uri.parse(url));
-                        context.startActivity(intent);
-                        return true;
-                    default:
-                        return true;
+                if(item.getItemId() == R.id.editAccount){
+                    HashMap<String, String> parameters = new HashMap<>();
+                    parameters.put("PasswordInfoBOId", passwordInfoBO.getEntity().getPrimaryKeyField().getValue().toString());
+                    parameters.put("EditMode", "1");
+                    PassLockApp app = (PassLockApp) context.getApplication();
+                    app.redirect(context, PasswordActivity.class, parameters);
+                    return true;
+                } else if (item.getItemId() == R.id.copyUserId){
+                    copyText(passwordInfoBO.getEntity().getUserId());
+                    return true;
+                } else if (item.getItemId() == R.id.copyPassword){
+                    copyText(Encryption.decrypt(context.getMasterPassword(), passwordInfoBO.getEntity().getPassword()).getValue());
+                    return true;
+                } else if (item.getItemId() == R.id.launchUrl){
+                    String url = passwordInfoBO.getEntity().getUrl();
+                    if(url == null || url.trim() == ""){
+                        url = "http://www.google.com";
+                    }else if(!url.startsWith("http")){
+                        url = "http://" + url;
+                    }
+                    final Intent intent = new Intent(Intent.ACTION_VIEW).setData(Uri.parse(url));
+                    context.startActivity(intent);
+                    return true;
+                } else {
+                    return true;
                 }
             }
         });

@@ -10,6 +10,7 @@ import com.reset4.fourwork.manifest.FourApp;
 import com.reset4.passlock.businessobjects.PasswordInfoBO;
 import com.reset4.passlock.manifest.PassLockApp;
 import com.reset4.passlock.security.MasterPassword;
+import com.reset4.passlockpro.R;
 
 public class MainActivity extends Activity {
 

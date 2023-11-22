@@ -3,13 +3,18 @@ package com.reset4.passlock.manifest;
 import android.Manifest;
 import android.app.Activity;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.support.v4.app.ActivityCompat;
+import android.os.Build;
+import android.os.Environment;
+import android.provider.Settings;
 
-import com.reset4.passlock.R;
+import androidx.core.app.ActivityCompat;
+
 import com.reset4.passlock.backup.BackupManager;
 import com.reset4.passlock.backup.OperationType;
 import com.reset4.passlock.ui.PLDialog;
+import com.reset4.passlockpro.R;
 
 public class Permission {
     private static final int REQUEST_EXTERNAL_STORAGE = 1;
@@ -27,8 +32,13 @@ public class Permission {
      */
     public static boolean verifyStoragePermissions(Activity activity) {
         // Check if we have write permission
-        int permission = ActivityCompat.checkSelfPermission(activity, Manifest.permission.WRITE_EXTERNAL_STORAGE);
-        boolean isVerificationNeeded = permission != PackageManager.PERMISSION_GRANTED;
+        boolean isVerificationNeeded = true;
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.R){
+            isVerificationNeeded = !Environment.isExternalStorageManager();
+        } else {
+            int permission = ActivityCompat.checkSelfPermission(activity, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+            isVerificationNeeded = permission != PackageManager.PERMISSION_GRANTED;
+        }
 
         if (isVerificationNeeded) {
             requestPermission(activity);
@@ -39,11 +49,27 @@ public class Permission {
 
     public static void requestPermission(Activity activity){
         // We don't have permission so prompt the user
-        ActivityCompat.requestPermissions(
-                activity,
-                PERMISSIONS_STORAGE,
-                REQUEST_EXTERNAL_STORAGE
-        );
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            if (!Environment.isExternalStorageManager()){
+                PLDialog dialog = new PLDialog(activity, R.string.permission_message_info, R.string.info);
+                dialog.setPositiveButton(R.string.button_ok, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Intent getpermissionIntent = new Intent();
+                        getpermissionIntent.setAction(Settings.ACTION_MANAGE_ALL_FILES_ACCESS_PERMISSION);
+                        activity.startActivity(getpermissionIntent);
+                    }
+                });
+                dialog.show();
+
+            }
+        } else {
+            ActivityCompat.requestPermissions(
+                    activity,
+                    PERMISSIONS_STORAGE,
+                    REQUEST_EXTERNAL_STORAGE
+            );
+        }
     }
 
     public static void onRequestPermissionResult(Activity activity, int[] grantResults, BackupManager backupManager){

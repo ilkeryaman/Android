@@ -2,13 +2,7 @@ package com.reset4.passlock;
 
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Spannable;
-import android.text.SpannableString;
-import android.text.method.LinkMovementMethod;
-import android.text.util.Linkify;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -23,13 +17,13 @@ import com.reset4.fourwork.library.enums.EntityStatus;
 import com.reset4.passlock.ad.AdManager;
 import com.reset4.passlock.businessobjects.PasswordInfoBO;
 import com.reset4.passlock.security.Encryption;
-import com.reset4.passlock.security.MasterPassword;
 import com.reset4.passlock.sharedpreference.SharedPrefenceManager;
 import com.reset4.passlock.ui.PLDialog;
 import com.reset4.passlock.ui.PLEditText;
 import com.reset4.passlock.ui.PLTextView;
 import com.reset4.passlock.ui.ScreenMode;
 import com.reset4.passlock.ui.UIHelper;
+import com.reset4.passlockpro.R;
 
 public class PasswordActivity extends PassLockActivity {
 
@@ -56,17 +50,16 @@ public class PasswordActivity extends PassLockActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.editPassword:
-                screenMode = screenMode.EDITABLE;
-                determineElementAttributes();
-                showOverflowMenu(false);
-                return true;
-            case R.id.deletePassword:
-                deletePassword();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
+        if(item.getItemId() == R.id.editPassword){
+            screenMode = screenMode.EDITABLE;
+            determineElementAttributes();
+            showOverflowMenu(false);
+            return true;
+        } else if (item.getItemId() == R.id.deletePassword){
+            deletePassword();
+            return true;
+        } else {
+            return super.onOptionsItemSelected(item);
         }
     }
 

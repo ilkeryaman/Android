@@ -13,7 +13,7 @@ import com.reset4.fourwork.library.enums.SaveSetting;
 import com.reset4.fourwork.repository.Column;
 import com.reset4.fourwork.repository.MetaData;
 import com.reset4.fourwork.repository.Table;
-import com.reset4.passlock.R;
+import com.reset4.passlockpro.R;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;

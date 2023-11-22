@@ -3,14 +3,15 @@ package com.reset4.passlock.ui;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
-import android.widget.EditText;
 
-import com.reset4.passlock.R;
+import androidx.appcompat.widget.AppCompatEditText;
+
+import com.reset4.passlockpro.R;
 
 /**
  * Created by ilkery on 31.12.2016.
  */
-public class PLEditText extends EditText {
+public class PLEditText extends AppCompatEditText {
     AttributeSet attrs;
 
     public PLEditText(Context context) {

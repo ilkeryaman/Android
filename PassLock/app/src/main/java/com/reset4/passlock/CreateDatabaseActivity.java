@@ -1,14 +1,9 @@
 package com.reset4.passlock;
 
-import android.app.Activity;
-import android.content.DialogInterface;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
 
 import com.reset4.fourwork.datalayer.BusinessObject;
-import com.reset4.fourwork.engine.general.FourContext;
 import com.reset4.fourwork.engine.general.FourException;
 import com.reset4.passlock.businessobjects.PasswordInfoBO;
 import com.reset4.passlock.manifest.PassLockApp;
@@ -16,6 +11,7 @@ import com.reset4.passlock.security.Encryption;
 import com.reset4.passlock.security.MasterPassword;
 import com.reset4.passlock.ui.PLDialog;
 import com.reset4.passlock.ui.PLEditText;
+import com.reset4.passlockpro.R;
 
 public class CreateDatabaseActivity extends PassLockActivity {
 

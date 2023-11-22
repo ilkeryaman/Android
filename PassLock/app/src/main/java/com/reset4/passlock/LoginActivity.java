@@ -11,6 +11,7 @@ import com.reset4.passlock.security.Encryption;
 import com.reset4.passlock.security.MasterPassword;
 import com.reset4.passlock.ui.PLDialog;
 import com.reset4.passlock.ui.PLEditText;
+import com.reset4.passlockpro.R;
 
 import java.util.HashMap;
 import java.util.Map;

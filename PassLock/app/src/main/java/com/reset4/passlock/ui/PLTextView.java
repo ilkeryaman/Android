@@ -3,14 +3,15 @@ package com.reset4.passlock.ui;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
-import android.widget.TextView;
 
-import com.reset4.passlock.R;
+import androidx.appcompat.widget.AppCompatTextView;
+
+import com.reset4.passlockpro.R;
 
 /**
  * Created by ilkery on 31.12.2016.
  */
-public class PLTextView extends TextView {
+public class PLTextView extends AppCompatTextView {
     AttributeSet attrs;
 
     public PLTextView(Context context) {

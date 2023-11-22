@@ -5,9 +5,9 @@ import android.content.DialogInterface;
 import android.content.Intent;
 
 import com.reset4.fourwork.manifest.FourApp;
-import com.reset4.passlock.R;
 import com.reset4.passlock.ui.Font;
 import com.reset4.passlock.ui.PLDialog;
+import com.reset4.passlockpro.R;
 
 import java.util.Map;
 

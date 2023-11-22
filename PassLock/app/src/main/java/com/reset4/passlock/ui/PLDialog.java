@@ -7,7 +7,7 @@ import android.util.TypedValue;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.reset4.passlock.R;
+import com.reset4.passlockpro.R;
 
 /**
  * Created by ilkery on 31.12.2016.

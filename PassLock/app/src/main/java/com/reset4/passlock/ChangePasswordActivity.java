@@ -1,7 +1,6 @@
 package com.reset4.passlock;
 
 import android.content.DialogInterface;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
@@ -10,11 +9,11 @@ import com.reset4.fourwork.datalayer.BusinessObject;
 import com.reset4.fourwork.engine.general.FourException;
 import com.reset4.fourwork.library.enums.EntityStatus;
 import com.reset4.passlock.businessobjects.PasswordInfoBO;
-import com.reset4.passlock.comparator.PasswordInfoComparator;
 import com.reset4.passlock.security.Encryption;
 import com.reset4.passlock.security.MasterPassword;
 import com.reset4.passlock.ui.PLDialog;
 import com.reset4.passlock.ui.PLEditText;
+import com.reset4.passlockpro.R;
 
 import java.util.ArrayList;
 import java.util.Collections;

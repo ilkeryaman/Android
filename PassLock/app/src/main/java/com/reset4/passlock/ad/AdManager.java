@@ -5,20 +5,25 @@ import android.content.Intent;
 import android.net.Uri;
 import android.view.View;
 
-import com.google.android.gms.ads.AdListener;
+import androidx.annotation.NonNull;
+
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.LoadAdError;
+import com.google.android.gms.ads.interstitial.InterstitialAd;
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 import com.reset4.passlock.PassLockActivity;
-import com.reset4.passlock.R;
+import com.reset4.passlockpro.R;
 
 /**
  * Created by ilkery on 8.01.2017.
  */
 public class AdManager {
-    private static boolean professionalEdition = true;
+    private static boolean professionalEdition = false;
     private static int defaultInterstitialFrequency = 3;
     private PassLockActivity context;
+
+    private InterstitialAd mInterstitialAd;
 
     public AdManager(PassLockActivity context){
         this.context = context;
@@ -29,9 +34,7 @@ public class AdManager {
         if(isProfessionalEdition()){
             adView.setVisibility(View.GONE);
         }else {
-            AdRequest adRequest = new AdRequest.Builder()
-                    .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-                    .build();
+            AdRequest adRequest = new AdRequest.Builder().build();
             // Start loading the ad in the background.
             adView.loadAd(adRequest);
         }
@@ -42,39 +45,27 @@ public class AdManager {
             //do nothing
             ;
         }else {
-            final InterstitialAd interstitial = new InterstitialAd(context);
-            interstitial.setAdUnitId(context.getResources().getString(R.string.interstitial));
-            interstitial.setAdListener(new AdListener() {
-                @Override
-                public void onAdLoaded() {
-                    displayInterstitial();
-                }
+            AdRequest adRequest = new AdRequest.Builder().build();
 
-                @Override
-                public void onAdClosed() {
-                    //you can do anything
-                    ;
-                }
+            InterstitialAd.load(context, context.getResources().getString(R.string.interstitial), adRequest,
+                    new InterstitialAdLoadCallback() {
+                        @Override
+                        public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
+                            // The mInterstitialAd reference will be null until
+                            // an ad is loaded.
+                            mInterstitialAd = interstitialAd;
+                        }
 
-                public void displayInterstitial() {
-                    if (interstitial.isLoaded()) {
-                        interstitial.show();
-                    }
-                }
-            });
+                        @Override
+                        public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
+                            // Handle the error
+                            mInterstitialAd = null;
+                        }
+                    });
 
-            requestNewInterstitial(interstitial);
         }
     }
 
-    private void requestNewInterstitial(InterstitialAd interstitial) {
-        AdRequest adRequest = new AdRequest.Builder()
-                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-                .tagForChildDirectedTreatment(true)
-                .build();
-
-        interstitial.loadAd(adRequest);
-}
 
     public void openPassLockProWebPage(){
         if(!isProfessionalEdition()){

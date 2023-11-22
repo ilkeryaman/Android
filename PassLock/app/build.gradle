@@ -1,15 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion "28.0.3"
+    namespace("com.reset4.passlockpro")
     defaultConfig {
         applicationId "com.reset4.passlockpro"
         //applicationId "com.reset4.passlock"
-        minSdkVersion 14
-        targetSdkVersion 28
-        versionCode 11
-        versionName "1.1"
+        minSdkVersion 24
+        targetSdkVersion 33
+        compileSdk 33
+        buildToolsVersion = "33.0.1"
+        versionCode 12
+        versionName "1.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -25,8 +26,8 @@ dependencies {
     /*androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })*/
-    implementation 'com.android.support:appcompat-v7:28.0.0'
-    implementation 'com.google.android.gms:play-services-ads:17.2.0'
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'com.google.android.gms:play-services-ads:22.5.0'
     //testCompile 'junit:junit:4.12'
 }
 

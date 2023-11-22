@@ -1,26 +1,20 @@
 package com.reset4.passlock.backup;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.DialogInterface;
-import android.graphics.Path;
 import android.os.Environment;
-import android.support.v7.view.menu.ActionMenuItem;
-import android.widget.TextView;
 
 import com.reset4.fourwork.datalayer.BOCollection;
 import com.reset4.fourwork.datalayer.BusinessObject;
 import com.reset4.fourwork.engine.general.FourContext;
 import com.reset4.fourwork.engine.general.FourException;
-import com.reset4.passlock.R;
 import com.reset4.passlock.RestoreDatabaseActivity;
-import com.reset4.passlock.WelcomeActivity;
 import com.reset4.passlock.businessobjects.PasswordInfoBO;
 import com.reset4.passlock.manifest.PassLockApp;
 import com.reset4.passlock.ui.PLDialog;
+import com.reset4.passlockpro.R;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

@@ -53,6 +53,7 @@
     <string name="delete_password_warning_message">Emin misiniz?</string>
     <string name="delete_database_warning_title">Silmeyi Onayla</string>
     <string name="delete_database_warning_message">Veritabanını silmek istediğinize emin misiniz? Bir kere silinirse, geri getirmenin imkanı yoktur.</string>
+    <string name="permission_message_info">Passlock yedekleme ve içeri aktarma işlemleri dosya sistemine erişim yetkisine sahip olmalıdır. Lütfen erişim izni veriniz.</string>
     <string name="permission_message_error">Yetki verilmediği için işleme devam edilemiyor.</string>
 
     <string name="existing_master_password">Mevcut Ana Parola:</string>
