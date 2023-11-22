@@ -19,7 +19,7 @@ import com.reset4.passlockpro.R;
  * Created by ilkery on 8.01.2017.
  */
 public class AdManager {
-    private static boolean professionalEdition = false;
+    private static boolean professionalEdition = true;
     private static int defaultInterstitialFrequency = 3;
     private PassLockActivity context;
 
